@@ -28,7 +28,8 @@ defmodule Issues.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      { :httpoison, "~> 0.4"} #this is found in Hex, which is the package manager for Elixir
+      { :httpoison, "~> 0.4"}, #this is found in Hex, which is the package manager for Elixir
+      { :jsx, "~> 2.0"} #JSON library
     ]
   end
 end
