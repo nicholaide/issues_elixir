@@ -15,7 +15,7 @@ defmodule Issues.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :httpoison] ]
+    [applications: [:logger, :httpoison] ] #i didn't seem to need to include :jsx here
   end
 
   # Dependencies can be Hex packages:
