@@ -4,6 +4,8 @@ defmodule Issues.Mixfile do
   def project do
     [app: :issues,
      version: "0.0.1",
+     name: "Issues",
+     source_url: "https://github.com/nicholaide/issues_elixir",
      elixir: "~> 1.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -30,7 +32,9 @@ defmodule Issues.Mixfile do
   defp deps do
     [
       { :httpoison, "~> 0.4"}, #this is found in Hex, which is the package manager for Elixir
-      { :jsx, "~> 2.0"} #JSON library
+      { :jsx, "~> 2.0"}, #JSON library
+      { :ex_doc, github: "elixir-lang/ex_doc"},
+      { :earmark, ">= 0.0.0"}
     ]
   end
   
